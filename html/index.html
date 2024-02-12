@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>AFK</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+		<link href="style.css" rel="stylesheet" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	</head>
+	<body id="body">
+		<div class="myshop">
+            <div class="input-header">
+                <div class="p">💰 ร้านค้าของฉัน </div>
+            </div>
+            <input type="text" class="input-line" placeholder="ใส่ชื่อร้าน" >
+			<div class="myitem">
+			</div>
+			<div class="myshoplive"></div>
+            <div class="btn-add">เพิ่มสินค้า</div>
+            <div class="btn-confirm" id="confirmshop">ตั้งร้าน</div>
+            <div class="btn-cancel closeshop">ปิดร้าน</div>
+        </div>
+		<div class="othershop">
+			<div class="input-header">
+				<div class="p">💰 ร้านค้า : <span id="otname"></span></div>
+			</div>
+			<div class="othershoplive"></div>
+			<div class="btn-cancel closeshop">ปิดร้าน</div>
+		</div>
+		<div id="confirm" style="display: none;"></div>
+		<div class="additemshop"></div>
+		<div id="textnoti" style="position: absolute; left: 15px; bottom: 25px; font-size: 18px; color: white; padding: 8px; background-color: rgba(0,0,0,0.8); width: 410px;">กดปุ่ม pagedown พิมพ์ /openshop เพื่อตั้งร้านค้า</div>
+		<script src="script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,306 @@
+ *{
+	margin: 0;
+	padding: 0;
+    font-family: 'Kanit', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+	position: absolute;
+	margin: auto;
+	width: 100%;
+	height: 100vh;
+    background: none;
+}
+
+.myshop, .othershop {
+    /* display: none; */
+    position: relative;
+    border-radius: .5vh;
+    margin: auto;
+    margin-top: 20vh;
+    width: 80vh;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.65);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.input-header {
+    position: relative;
+    border-radius: .5vh .5vh 0px 0px;
+    margin: auto;
+    height: 3vh;   
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.p {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 2vh;
+    line-height: 2vh;
+}
+
+.input-line {
+    position: relative;
+    border: 1px solid white;
+    color: #fff;
+    border-radius: .3vh;
+    margin: auto;
+    margin-left: 1.6vh;
+    width: 36.5vh;
+    margin-top: 1vh;
+    height: 2.5vh;
+    text-align: center;
+    font-size: 1.3vh;
+    background: rgba(21,24,27,0.7);
+    user-select: none;
+}
+
+
+.myshoplive, .othershoplive {
+    position: relative;
+    width: 79vh;
+    height: 50vh;
+    margin: auto;
+    margin-top: 1vh;
+    overflow-y: auto;
+}
+
+.myitem {
+    position: relative;
+    width: 79vh;
+    height: 48vh;
+    margin: auto;
+    margin-top: 1vh;
+    overflow-y: auto;
+}
+
+.item-shop {
+    display: inline-flex;
+    width: 32%;
+    min-height: 135px;
+    margin-left: 0.5%;
+    border-radius: .5vh;
+    border: 1px solid white;
+    color: #ffffff;
+}
+
+.item-shop img {
+    display: inline-flex;
+    margin: auto;
+	width: 35%;
+}
+.item-shop .item-detail {
+    display: inline;
+	width: 60%;
+    top: 0;
+    margin: auto;
+}
+
+.additemshop {
+    display: none;
+    position: absolute;
+    width: 40vh;
+	left: 50%;
+	top: 30%;
+    transform: translateX(-50%);
+    border-radius: .5vh;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 4.5vh;
+}
+
+.form-row {
+    margin-top: 2vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-add {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: .2vh;
+    width: 8vh;
+    height: 2.5vh;
+    top: 4vh;
+    right: 2.5vh;
+    text-align: center;
+    background-color: rgba(0, 51, 255, 0.5);
+    font-size: 1.3vh;
+    line-height: 2.5vh;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-confirm {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: .2vh;
+    width: 8vh;
+    height: 2.5vh;
+    bottom: 1vh;
+    right: 12vh;
+    text-align: center;
+    background-color: rgba(0, 255, 34, 0.5);
+    font-size: 1.3vh;
+    line-height: 2.5vh;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: .2vh;
+    width: 8vh;
+    height: 2.5vh;
+    bottom: 1vh;
+    right: 2.5vh;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(246, 0, 0, 0.5);
+    font-size: 1.3vh;
+    line-height: 2.5vh;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.btn-del {
+    position: relative;
+    border: 1px solid white;
+    border-radius: .2vh;
+    width: 2vh;
+    height: 2vh;
+    margin-left: 82%;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(246, 0, 0, 0.5);
+    font-size: 1.3vh;
+    line-height: 2vh;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.btn-confirm:hover {
+    border-color: transparent;
+    background-color: rgb(0, 255, 34);
+    transition: background-color 200ms linear;
+}
+
+.btn-cancel:hover, .btn-del:hover {
+    border-color: transparent;
+    background-color: rgb(246, 0, 0);
+    transition: background-color 200ms linear;
+}
+
+#confirm {
+    position: absolute;
+    width: 300px;
+    height: 170px;
+    background: rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.44);
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    font-size: 1.225rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#confirmtitle {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    font-size: 1.32rem;
+    width: 250px;
+    margin-left: 25px;
+}
+
+#count {
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: rgba(100, 100, 100, 1);
+    border-radius: 1vh;
+    width: 150px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 2vh;
+}
+
+#bconfirm {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 8vh;
+    height: 3vh;
+    top: 110px;
+    left: 3.5rem;
+    border-radius: .2vh;
+    z-index: 1;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vh;
+    line-height: 3vh;
+    cursor: pointer;
+}
+
+#bcancel {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 8vh;
+    height: 3vh;
+    top: 110px;
+    right: 3.5rem;
+    border-radius: .2vh;
+    z-index: 1;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vh;
+    line-height: 3vh;
+    cursor: pointer;
+}
+
+.btn-buy {
+    position: relative;
+    border: 1px solid white;
+    border-radius: .2vh;
+    width: 4vh;
+    height: 2.5vh;
+    margin-left: 65%;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 51, 255, 0.5);
+    font-size: 1.3vh;
+    line-height: 2vh;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.opClass {
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+}
